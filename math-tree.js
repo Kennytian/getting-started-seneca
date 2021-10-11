@@ -1,2 +1,1 @@
-require('seneca')()
-  .use('math')
+require('seneca')().use('math')
