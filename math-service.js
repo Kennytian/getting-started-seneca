@@ -1,3 +1,1 @@
-require('seneca')()
-  .use('math')
-  .listen()
+require('seneca')().use('math').listen();
