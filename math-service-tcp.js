@@ -1,3 +1,1 @@
-require('seneca')()
-  .use('math')
-  .listen({type: 'tcp'})
+require('seneca')().use('math').listen({type: 'tcp'});
