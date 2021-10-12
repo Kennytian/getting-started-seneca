@@ -1,12 +1,10 @@
-require('seneca')()
-  .use('basic')
-  .use('entity')
-  .use('book-store')
-  .listen({
+const Seneca = require('seneca');
+const seneca = new Seneca();
+
+seneca.use('basic').use('entity').use('book-store').listen({
     port: 9002,
     pin: 'role:store'
-  })
-  .client({
+}).client({
     port: 9003,
-    pin: 'role:store,info:purchase'
-  });
+    pint: 'role:store, info:purchase'
+});
